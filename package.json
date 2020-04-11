@@ -1,6 +1,6 @@
 {
   "name": "vue-svg-circle-progress-bar",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -10,6 +10,7 @@
     "core-js": "^3.6.4",
     "vue": "^2.6.11"
   },
+  "main":"./dist/circle-progress.umd.min.js",
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.3.0",
     "@vue/cli-service": "~4.3.0",

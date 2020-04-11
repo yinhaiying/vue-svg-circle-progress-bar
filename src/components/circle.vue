@@ -37,11 +37,6 @@
 <script>
 export default {
   name:'CircleProgress',
-  data(){
-    return {
-      r:50
-    }
-  },
   props:{
     progressOption:Object
   },
@@ -52,8 +47,9 @@ export default {
         progressColor: 'yellow',
         strokeWidth:10,
         radius:50,
-        dur:1,
-        animate:false
+        dur:5,
+        animate:false,
+        strokeDasharray:'100,10000'
       };
       Object.assign(baseOption,this.progressOption);
       baseOption.cy = baseOption.cx = baseOption.radius + baseOption.strokeWidth;

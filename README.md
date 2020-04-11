@@ -18,7 +18,9 @@ export default {
   data(){
     return {
       progressOption:{
-        progressColor:'yello'
+        progressColor:'yello',
+        progress:50,
+        text:"50%"
       }
     }
   }
@@ -29,14 +31,16 @@ export default {
 ```
 
 see the `prop` in `progressOption`
-| props | default | type |
-| ------ | ------ | ------ |
-| bgColor | #F6F6F6 | String |
-| progressColor | #FF0000 | String |
-| strokeWidth | 10 | Number |
-| radius | 50 | Number |
-| animate | false | Boolean |
-| dur | 1 | Number |
+| props | default | type | description |
+| ------ | ------ | ------ |------ |
+| progress | 50 | Number |  progress   |
+| text | 50 | String |the progress text|
+| bgColor | #F6F6F6 | String |backgroundColor of progress|
+| progressColor | #FF0000 | String |progressColor of progress|
+| strokeWidth | 10 | Number | width of progress|
+| radius | 50 | Number |radius of progress|
+| animate | false | Boolean |  animate or not    |
+| dur | 1 | Number |during of animation|
 
 
 ## keywords
