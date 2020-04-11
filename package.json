@@ -1,10 +1,10 @@
 {
-  "name": "vue-circle",
-  "version": "0.1.0",
-  "private": true,
+  "name": "vue-svg-circle-progress-bar",
+  "version": "1.0.0",
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build --target lib --name circle-progress ./src/components/circle.vue"
   },
   "dependencies": {
     "core-js": "^3.6.4",

@@ -1,19 +1,43 @@
-# vue-circle
+# vue-svg-circle-progress-bar
 
-## Project setup
-```
-npm install
-```
+![vue-progress.gif](https://i.loli.net/2020/04/11/ANuIagl3UScTYJK.gif)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
+Install
+```javascript
+npm i vur-circle-progress-bar
 ```
 
-### Compiles and minifies for production
+Using
+```javascript
+import CircleProgress from 'vue-svg-circle-progress-bar'
+
+export default {
+  components:{
+   CircleProgress
+  },
+  data(){
+    return {
+      progressOption:{
+        progressColor:'yello'
+      }
+    }
+  }
+}
 ```
-npm run build
+```javascript
+<CircleProgress :progressOption = "progressOption"/>
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+see the `prop` in `progressOption`
+| props | default | type |
+| ------ | ------ | ------ |
+| bgColor | #F6F6F6 | String |
+| progressColor | #FF0000 | String |
+| strokeWidth | 10 | Number |
+| radius | 50 | Number |
+| animate | false | Boolean |
+| dur | 1 | Number |
+
+
+## keywords
+`vue` `svg` `progress`

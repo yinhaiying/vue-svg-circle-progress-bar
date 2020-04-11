@@ -1,28 +1,35 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <CircleProgress :progressOption = "progressOption"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
+import CircleProgress from './components/circle.vue'
 export default {
   name: 'App',
+  data(){
+    return {
+        progressOption:{
+          progressColor: 'red',
+          strokeWidth:20,
+          radius:100,
+          progress:50,
+          text:"50%",
+          animate:true
+        }
+    }
+  },
   components: {
-    HelloWorld
-  }
+    CircleProgress
+  },
 }
 </script>
 
 <style lang="less">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin-top:100px;
 }
 </style>
